@@ -1,0 +1,217 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap');
+
+/* HEADING */
+
+.header {
+  text-align: center;
+  margin: 80px 0px 20px 0px;
+}
+
+.header img {
+  width: 100px;
+  height: 65px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.header h2 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.header p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #717170;
+}
+
+
+
+/* SIGNUP FORM */
+
+.signupForm {
+  justify-self: center;
+}
+
+.cols {
+  display: flex;
+  gap: 20px;
+}
+
+.signupForm .columns .column form .cols .col .formGroup {
+  margin-top: 20px;
+}
+
+.signupForm .columns .column form .cols .col .formGroup label {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.signupForm .columns .column form .cols .col .formGroup input {
+  width: 610px;
+  height: 54px;
+  padding: 5px 20px;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.signupForm .columns .column form .cols .col .formGroup.address input {
+  padding: 5px 20px;
+  height: 81px;
+}
+
+.signupForm .columns .column form .cols .col .formGroup input::placeholder {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.signupForm .columns .column form button {
+  margin: 20px 0px 0px 500px;
+  padding: 10px 0px;
+  text-align: center;
+  width: 200px;
+  font-weight: bold;
+  background-color: black;
+  border: unset;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.loginForm .columns form .column .formGroup.CodeRequest input {
+  width: 610px;
+  height: 54px;
+  padding: 5px 20px;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+
+/* LOGIN FORM */
+
+.loginForm {
+  justify-self: center;
+}
+
+.loginForm .columns form .column .formGroup label {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.loginForm .columns form .column .formGroup input {
+  width: 580px;
+  border: none;
+  padding: 5px 0px;
+  outline: unset;
+}
+
+.loginForm .columns form .column .formGroup input::placeholder {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.loginPassword {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 610px;
+  height: 54px;
+  padding: 5px 20px;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin: 15px 0px;
+}
+
+.loginEmail {
+  width: 610px;
+  height: 54px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin: 15px 0px;
+}
+
+.loginForm .columns form button {
+  margin: 20px 0px 0px 190px;
+  padding: 10px 0px;
+  text-align: center;
+  width: 230px;
+  font-weight: bold;
+  background-color: black;
+  border: unset;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.loginForm .columns form a {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  position: relative;
+  left: 240px;
+  top: 10px;
+}
+
+.loginForm .columns form span {
+  color: rgb(173, 173, 173);
+}
+
+.signup-password-terms {
+  width: 610px;
+  margin: 16px 0 0;
+  padding: 0;
+  color: #666;
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.signup-password-terms span {
+  color: #666;
+}
+
+.loginForm .columns form .formGroup button {
+  margin: 0px 10px 0px 440px;
+  padding: 10px 0px;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: rgb(194, 29, 29);
+  width: 150px;
+  border-radius: 5px;
+}
+
+

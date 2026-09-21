@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import '../style/admin.css';
 
 const AdminDashboard = () => {
   const [rows, setRows] = useState([]);

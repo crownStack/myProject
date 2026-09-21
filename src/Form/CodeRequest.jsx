@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import images from "../images/AbrahamolaLogo.png";
+import "../style/forms.css";
 
 const CodeRequester = () => {
     const [identifier, setIdentifier] = useState('');

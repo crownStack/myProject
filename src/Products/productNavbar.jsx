@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
+import "../style/products.css";
 
 const ProductNavbar = () => {
   return (

@@ -18,6 +18,7 @@
     line-height: 100%;
     letter-spacing: 0%;
     padding: 2px 20px;
+    margin-left: 28px;
 }
 
 .hero .heroText h2 {
@@ -35,9 +36,9 @@
     font-weight: 500;
     font-style: Medium;
     font-size: 14px;
-    line-height: 100%;
+    line-height: 140%;
     letter-spacing: 0%;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .hero .heroText button {
@@ -56,6 +57,7 @@
     background-color: black;
     margin-top: 40px;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .hero .heroImg {
@@ -74,6 +76,7 @@
     height: 514px;
     align-items: center;
     justify-content: space-around;
+    padding: 0%;
 }
 
 .priceSlash .priceSlashText span {

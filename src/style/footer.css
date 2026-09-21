@@ -1,0 +1,127 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap');
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(250, 216, 22);
+  box-shadow: 0px 2px 2px 5px rgb(228, 227, 227);
+  justify-content: center;
+  padding: 50px 20px;
+  margin-top: 50px;
+}
+
+footer div {
+  display: flex;
+  gap: 50px;
+  justify-content: space-aroun;
+  justify-self: center;
+  gap: 120px;
+}
+
+footer div h2 {
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.homeFooter .footer-column {
+  display: block;
+  min-width: 130px;
+}
+
+.homeFooter .footer-column h2 {
+  margin: 0 0 14px;
+  padding: 0;
+  text-align: left;
+}
+
+.homeFooter .footer-column ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer div ul li {
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  align-items: center;
+}
+
+footer div ul li i {
+  margin-right: 10px;
+}
+
+footer .subscribe form label {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+footer .subscribe form input {
+  padding: 10px 10px;
+  width: 280px;
+  height: 41px;
+  border: 1px solid #211d1d;
+  border-radius: 10px;
+  opacity: 1;
+  border-width: 1px;
+  margin-top: 8px;
+}
+
+footer .subscribe form input::placeholder {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+footer .subscribe form button {
+  width: 153px;
+  height: 34px;
+  padding: 10px 0px;
+  border: unset;
+  border-radius: 8px;
+  margin-top: 10px;
+  background: black;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+footer .subscribe form button i {
+  margin-left: 10px;
+}
+
+footer .reserved {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 40px;
+  opacity: 1;
+}
+
+.homeFooter {
+  background: #fff;
+}
+
+

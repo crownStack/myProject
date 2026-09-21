@@ -1,0 +1,187 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap');
+
+.profilePage {
+  justify-self: center;
+  margin-top: 30px;
+}
+
+.profileDetails {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.profileDetails div {
+  border: 3px solid black;
+  width: 545px;
+  height: 138px;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.productDetails div, h2 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.productDetails div, h3 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.productDetails div, p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-left: 20px;
+  padding-top: 8px;
+}
+
+
+.changePassword {
+  margin-top: 60px;
+  margin-bottom: 120px;
+  justify-content: center;
+}
+
+.changePassword h2 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding: 0;
+}
+
+.changePassword .colomn {
+  display: flex;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+.changePassword .colomn label {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.changePassword input {
+  width: 468px;
+  height: 40px;
+  opacity: 1;
+  border-radius: 10px;
+  border: 3px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.changePassword form button {
+  width: 318px;
+  height: 49px;
+  opacity: 1;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  border: unset;
+  margin-left: 350px;
+}
+
+.profileLogout {
+  width: min(1110px, calc(100% - 40px));
+  margin: 0 auto 80px;
+  padding: 22px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border: 1px solid #e1e1e1;
+  border-left: 5px solid #d92d2d;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.profileLogout h2 {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  font-size: 18px;
+}
+
+.profileLogout p {
+  margin: 7px 0 0;
+  padding: 0;
+  color: #666;
+  font-size: 13px;
+}
+
+.profileLogout button {
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background: #d92d2d;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.profileLogout button:hover {
+  background: #b42323;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 760px) {
+  .profileDetails,
+  .changePassword .colomn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profileDetails div,
+  .changePassword input {
+    width: min(545px, calc(100% - 40px));
+  }
+
+  .profileLogout {
+    align-items: stretch;
+    flex-direction: column;
+    width: calc(100% - 40px);
+  }
+
+  .profileLogout button {
+    width: 100%;
+  }
+}
+

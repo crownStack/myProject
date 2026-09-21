@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Outlet, NavLink, Link } from "react-router-dom";
 import images from "../images/AbrahamolaLogo.png";
+import "../style/navigation.css";
 
 const Navbar = () => {
     const [ showOptions, setShowOptions ] = useState(false);

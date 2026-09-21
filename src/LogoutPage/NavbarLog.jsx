@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Outlet, NavLink, Link } from "react-router-dom";
 import images from "../images/AbrahamolaLogo.png";
+import "../style/navigation.css";
 
 const Navbar = () => {
     const [ showOptions, setShowOptions ] = useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
                         margin: "0 10px",
                         fontWeight: isActive ? "#979281" : "500",
                         color: isActive ? "#211d1d" : "#979281"
-                    })}>Find Us <i style={{color: 'blue'}}>🔻</i>
+                    })}>Find Us <i style={{color: '#211d1d'}}>▼</i>
                         {showOptions && (
                             <div className="options">
                                 <div>MAP</div>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Footer from "./Footer";
 import images from "../images/AbrahamolaLogo.png"
 import { useNavigate } from 'react-router-dom'
+import '../style/forms.css'
 
 const Signup = () => {
     //Form datas

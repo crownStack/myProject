@@ -2,6 +2,7 @@ import Footer from "./Footer";
 import images from "../images/AbrahamolaLogo.png";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import "../style/forms.css";
 
 const Login = () => {
     const [ formData, setFormData ] = useState({

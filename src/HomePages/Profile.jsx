@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Footer from './Footer';
+import '../style/profile.css';
 
 
 const Profile = () => {

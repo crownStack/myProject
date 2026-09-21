@@ -5,6 +5,7 @@ import image2 from "../images/Man with Phone 1.png"
 import image3 from "../images/portrait-young-man-isolated.png"
 import Footer from "../HomePages/Footer"
 import ProductNavbar from '../Products/productNavbar'
+import '../style/products.css'
 
 
 const Products = () => {

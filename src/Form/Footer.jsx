@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/footer.css";
 
 const Footer = () => {
     return (
@@ -37,7 +38,7 @@ const Footer = () => {
                         </form>
                     </div>
                 </div>
-                <p className="reserved">2024 @ Abrahamolas Gadgets. All rights reserved</p>
+                <p className="reserved">2024 © Abrahamolas Gadgets. All rights reserved</p>
             </footer>
         </>
     )

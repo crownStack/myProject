@@ -1,0 +1,561 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap');
+
+/* PRODUCT NAVBAR */
+.product-navbar {
+  background-color: #D9D9D9;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-navbar .links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.heroProducts {
+  position: relative;
+  width: 100%;
+  height: 277px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0px 4px 2px 1px rgb(209, 209, 209);
+}
+
+.heroProducts .hero-gr {
+  background-image: url('../images/Rectangle 67.png');
+  width: 1023px;
+  height: 277px;
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.heroProducts .hero-gr h2 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.heroProducts img {
+  width: 344px;
+  height: 277px;
+  opacity: 1;
+  position: relative;
+  left: 940px;
+}
+
+.category {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-self: center;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.category .iphones {
+  background-image: url("../images/Rectangle 53.png");
+  width: 400px;
+  height: 303px;
+  opacity: 1;
+  mix-blend-mode: Plus darker;
+  text-align: center;
+  backdrop-filter: blur(5.900000095367432px);
+  box-shadow: 0px 1px 5px 5px rgb(221, 219, 219);
+  cursor: pointer;
+}
+
+.category .iphones::after {
+  content: "";
+  background: rgba(33, 29, 29, 0.3);
+  width: 400px;
+  height: 303px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: -1;
+}
+
+.category .iphones h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #fff;
+  padding: 250px 0px 0px 30px;
+}
+
+
+.category .samsungs {
+  background-image: url("../images/Rectangle 47.png");
+  width: 400px;
+  height: 303px;
+  opacity: 1;
+  mix-blend-mode: Plus darker;
+  text-align: center;
+  backdrop-filter: blur(5.900000095367432px);
+  box-shadow: 0px 1px 5px 5px rgb(221, 219, 219);
+  cursor: pointer;
+}
+
+.category .samsungs::after {
+  content: "";
+  background: rgba(33, 29, 29, 0.3);
+  width: 400px;
+  height: 303px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: -1;
+}
+
+.category .samsungs h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #fff;
+  padding: 250px 0px 0px 30px;
+}
+
+.category .laptop {
+  background-image: url("../images/Rectangle 48.png");
+  width: 400px;
+  height: 303px;
+  opacity: 1;
+  mix-blend-mode: Plus darker;
+  text-align: center;
+  backdrop-filter: blur(5.900000095367432px);
+  box-shadow: 0px 1px 5px 5px rgb(221, 219, 219);
+  cursor: pointer;
+}
+
+.category .laptop::after {
+  content: "";
+  background: rgba(33, 29, 29, 0.3);
+  width: 400px;
+  height: 303px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: -1;
+}
+
+.category .laptop h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #fff;
+  padding: 250px 0px 0px 30px;
+}
+
+
+.category .smartWatch {
+  background-image: url("../images/Rectangle 57.png");
+  width: 400px;
+  height: 303px;
+  opacity: 1;
+  mix-blend-mode: Plus darker;
+  text-align: center;
+  backdrop-filter: blur(5.900000095367432px);
+  box-shadow: 0px 1px 5px 5px rgb(221, 219, 219);
+  cursor: pointer;
+}
+
+.category .smartWatch::after {
+  content: "";
+  background: rgba(33, 29, 29, 0.3);
+  width: 400px;
+  height: 303px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: -1;
+}
+
+.category .smartWatch h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #fff;
+  padding: 250px 0px 0px 30px;
+}
+
+
+.category .tablets {
+  background-image: url("../images/Rectangle 58.png");
+  width: 400px;
+  height: 303px;
+  opacity: 1;
+  mix-blend-mode: Plus darker;
+  text-align: center;
+  backdrop-filter: blur(5.900000095367432px);
+  box-shadow: 0px 1px 5px 5px rgb(221, 219, 219);
+  cursor: pointer;
+}
+
+.category .tablets::after {
+  content: "";
+  background: rgba(33, 29, 29, 0.3);
+  width: 400px;
+  height: 303px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: -1;
+}
+
+.category .tablets h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #fff;
+  padding: 250px 0px 0px 30px;
+}
+
+
+.category .accessories {
+  background-image: url("../images/Rectangle 59.png");
+  width: 400px;
+  height: 303px;
+  opacity: 1;
+  mix-blend-mode: Plus darker;
+  text-align: center;
+  backdrop-filter: blur(5.900000095367432px);
+  box-shadow: 0px 1px 5px 5px rgb(221, 219, 219);
+  cursor: pointer;
+}
+
+.category .accessories::after {
+  content: "";
+  background: rgba(33, 29, 29, 0.3);
+  width: 400px;
+  height: 303px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: -1;
+}
+
+.category .accessories h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #fff;
+  padding: 250px 0px 0px 30px;
+}
+
+.category .games {
+  background-image: url("../images/Rectangle 64.png");
+  width: 400px;
+  height: 303px;
+  opacity: 1;
+  mix-blend-mode: Plus darker;
+  text-align: center;
+  backdrop-filter: blur(5.900000095367432px);
+  box-shadow: 0px 1px 5px 5px rgb(221, 219, 219);
+  cursor: pointer;
+}
+
+.category .games::after {
+  content: "";
+  background: rgba(33, 29, 29, 0.3);
+  width: 400px;
+  height: 303px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: -1;
+}
+
+.category .games h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #fff;
+  padding: 250px 0px 0px 30px;
+}
+
+
+
+
+
+
+/* PRODUCT DETAILS */
+.productDetails {
+  display: grid;
+  grid-template-columns: 1.7fr 1.5fr 0.8fr;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.productDetails .productSpecs {
+  grid-column: 1 / -1;
+}
+
+.productHero {
+  box-shadow: 1px 2px 5px 3px black;
+}
+
+.productDetails .productImage img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  box-shadow: 1px 2px 5px 2px rgb(238, 232, 232);
+}
+
+.productInfo {
+  margin-top: 30px;
+}
+
+.productInfo h1 {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: montserrat;
+  margin-bottom: 80px;
+}
+
+.productInfo p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.productRating {
+  display: flex;
+  gap: 95px;
+  margin-top: 10px;
+}
+
+.productRating span {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(196, 15, 53, 1);
+  margin-top: 8px;
+}
+
+.ProductPrice {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: 10px;
+}
+
+.ProductBtn {
+  margin-top: 10px;
+}
+
+.ProductBtn button {
+  width: 22px;
+  height: 20px;
+  opacity: 1;
+  border-radius: 5px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background: rgba(255, 204, 41, 1);
+  border: unset;
+  cursor: pointer;
+}
+
+.ProductBtn span {
+  padding: 1px 25px;
+  opacity: 1;
+  border-radius: 2px;
+  border: 0.5px solid rgb(241, 241, 241);
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 0px 5px;
+}
+
+.CartBtn {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.CartBtn button {
+  width: 240px;
+  height: 51px;
+  opacity: 1;
+  border-radius: 10px;
+  border: 1px solid #211d1d;
+  gap: 10px;
+  padding-top: 11px;
+  padding-right: 22px;
+  padding-bottom: 11px;
+  padding-left: 22px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.delivery {
+  width: 296px;
+  height: 711px;
+  opacity: 1;
+  border-radius: 5px;
+  background: #f9f9f9;
+  justify-self: center;
+  padding: 30px 20px 0px 30px;
+}
+  
+.delivery select,
+.delivery textarea,
+.delivery input {
+  width: 241px;
+  height: 39px;
+  opacity: 1;
+  border: 2px solid #a09a9a;
+  padding: 0px 10px 0px 10px;
+}
+
+.delivery select {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.delivery textarea {
+  padding-top: 10px;
+}
+
+.delivery textarea::placeholder, input::placeholder {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.delivery textarea {
+  height: 109px;
+}
+
+.delivery h3, p {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.productInfo h2 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(33, 29, 29, 1);
+  margin-bottom: 20px;
+}
+
+.productInfo div {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productInfo strong {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(33, 29, 29, 1);
+}
+
+.productInfo span {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(33, 29, 29, 1);
+  position: relative;
+  left: -300px;
+}
+
+.delivery label {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+
+
+

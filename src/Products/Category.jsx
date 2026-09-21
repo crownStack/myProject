@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import TopSales from '../Products/TopSales'
 import image2 from "../images/Man with Phone 1.png"
 import Footer from '../HomePages/Footer'
+import '../style/products.css'
 
 const Category = () => {
   return (

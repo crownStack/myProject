@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import '../style/cart.css'
 
 const Cart = () => {
   const [items, setItems] = useState([]);

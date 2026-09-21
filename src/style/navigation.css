@@ -1,0 +1,126 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap');
+
+/* NavBar */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.navbar .links {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.navbar .links .link {
+  cursor: pointer;
+  font-family: Montserrat;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.navbar .links p {
+  color: #979281;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.navbar .links i {
+  cursor: pointer;
+  color: #979281;
+  font-size: 16px;
+}
+
+.navbar .search {
+  display: flex;
+  border: 2px solid rgb(150, 148, 148);
+  border-radius: 5px;
+  width: 134px;
+  padding: 0px 10px;
+}
+
+.navbar .search input {
+  border: none;
+  padding: 0px 0px;
+  outline: unset;
+  width: 90px;
+  background: none;
+}
+
+.navbar .search i {
+  background: rgb(150, 148, 148);
+  padding: 10px 8px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.navbar .signbtn a {
+  color: black;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.navbar .signbtn .signup {
+  background: yellow;
+  padding: 10px 20px;
+  margin-left: 20px;
+  width: 110px;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .navbar .links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .navbar .links .link {
+    font-size: 14px;
+  }
+
+  .navbar .search {
+    width: 150px;
+  }
+
+  .navbar .signbtn a {
+    font-size: 14px;
+  }
+
+  .navbar .signbtn .signup {
+    margin-left: 8px;
+    padding: 10px;
+    width: auto;
+  }
+}
+
+
+
+
+
