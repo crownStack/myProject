@@ -86,7 +86,7 @@ const ProtectedRoute = () => {
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/myProject">
         <Routes>
           <Route element={<NavbarLogout />}>
             <Route index element={<LogoutPage />} />
