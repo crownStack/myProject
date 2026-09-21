@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap');
+
+/* Shared tablet and phone layout adjustments */
+@media (max-width: 1024px) {
+  .category {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .category .iphones,
+  .category .samsungs,
+  .category .laptop,
+  .category .smartWatch,
+  .category .tablets,
+  .category .accessories,
+  .category .games {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .productDetails {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 24px;
+    padding: 20px;
+  }
+
+  .delivery {
+    grid-column: 1 / -1;
+    width: min(100%, 520px);
+    height: auto;
+    min-height: 420px;
+    justify-self: stretch;
+  }
+
+  .delivery select,
+  .delivery textarea,
+  .delivery input {
+    width: 100%;
+  }
+
+  .signupForm .columns .column form .cols,
+  .loginForm .columns form .column .formGroup {
+    max-width: calc(100vw - 40px);
+  }
+
+  .signupForm .columns .column form .cols {
+    flex-wrap: wrap;
+  }
+
+  .signupForm .columns .column form .cols .col .formGroup input,
+  .loginForm .columns form .column .formGroup.CodeRequest input,
+  .loginPassword,
+  .loginEmail,
+  .signup-password-terms {
+    width: min(610px, calc(100vw - 40px));
+  }
+
+  .signupForm .columns .column form button,
+  .loginForm .columns form button,
+  .loginForm .columns form .formGroup button {
+    margin-left: 0;
+  }
+
+  .cartSuccessModal {
+    width: min(864px, calc(100vw - 40px));
+    height: auto;
+  }
+
+  .sucessfulImg {
+    width: min(495px, 80vw);
+    height: min(496px, 80vw);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    margin-top: 12px;
+    padding: 14px 12px 20px;
+    gap: 14px;
+  }
+
+  .navbar img {
+    width: 92px;
+    height: auto;
+  }
+
+  .navbar .links {
+    gap: 8px;
+  }
+
+  .navbar .search {
+    width: 100%;
+  }
+
+  .navbar .search input {
+    flex: 1;
+    width: auto;
+  }
+
+  .product-navbar .links {
+    gap: 12px;
+    margin-left: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .heroProducts {
+    height: 190px;
+  }
+
+  .heroProducts .hero-gr {
+    width: 100%;
+    height: 190px;
+  }
+
+  .heroProducts .hero-gr h2 {
+    padding-top: 62px;
+    font-size: 24px;
+  }
+
+  .heroProducts img {
+    display: none;
+  }
+
+  .category {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
+
+  .category .iphones,
+  .category .samsungs,
+  .category .laptop,
+  .category .smartWatch,
+  .category .tablets,
+  .category .accessories,
+  .category .games {
+    width: 100%;
+    height: 220px;
+  }
+
+  .category .iphones::after,
+  .category .samsungs::after,
+  .category .laptop::after,
+  .category .smartWatch::after,
+  .category .tablets::after,
+  .category .accessories::after,
+  .category .games::after {
+    width: 100%;
+    height: 220px;
+  }
+
+  .category .iphones h1,
+  .category .samsungs h1,
+  .category .laptop h1,
+  .category .smartWatch h1,
+  .category .tablets h1,
+  .category .accessories h1,
+  .category .games h1 {
+    padding: 168px 0 0 22px;
+    font-size: 24px;
+  }
+
+  .productDetails {
+    display: block;
+    padding: 12px;
+    margin: 16px auto;
+  }
+
+  .productDetails .productImage img {
+    height: 300px;
+  }
+
+  .productInfo h1 {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+
+  .productRating {
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .productInfo span {
+    left: 0;
+  }
+
+  .CartBtn {
+    margin-top: 24px;
+  }
+
+  .CartBtn button {
+    width: 100%;
+  }
+
+  .delivery {
+    margin-top: 24px;
+    padding: 22px 16px;
+    min-height: 0;
+  }
+
+  .cartPage {
+    padding: 0 12px;
+    margin-top: 16px;
+  }
+
+  .cartProduct {
+    padding: 22px 12px;
+  }
+
+  .cart {
+    align-items: center;
+    gap: 14px;
+    padding: 0 0 18px;
+  }
+
+  .cartItems {
+    display: block;
+  }
+
+  .cartItems .titlePrice h2 {
+    font-size: 16px;
+  }
+
+  .cartItems .titlePrice .quantity,
+  .cartItems .titlePrice .brand {
+    font-size: 14px;
+  }
+
+  .cartPage img {
+    width: 92px;
+    height: 104px;
+  }
+
+  .deliveryInfo {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .cartTotal {
+    width: 100%;
+  }
+
+  .cartTotal button {
+    width: 100%;
+  }
+
+  .cartSuccessModal {
+    padding: 20px 12px;
+  }
+
+  .sucessfulImg img {
+    width: 70%;
+    height: auto;
+  }
+
+  .cartSuccessActions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cartSuccessActions button,
+  .cartSuccessActions button:last-child {
+    width: 100%;
+    min-width: 0;
+    margin: 8px 0 0;
+  }
+
+  .header {
+    margin: 36px 0 20px;
+    padding: 0 16px;
+  }
+
+  .header h2 {
+    font-size: 18px;
+  }
+
+  .signupForm,
+  .loginForm {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .signupForm .columns .column form .cols {
+    display: block;
+  }
+
+  .signupForm .columns .column form .cols .col .formGroup input,
+  .loginForm .columns form .column .formGroup.CodeRequest input,
+  .loginPassword,
+  .loginEmail,
+  .signup-password-terms {
+    width: 100%;
+  }
+
+  .loginForm .columns form .column .formGroup input {
+    width: 100%;
+  }
+
+  .loginForm .columns form a {
+    display: block;
+    left: 0;
+    text-align: center;
+  }
+
+  .signupForm .columns .column form button,
+  .loginForm .columns form button,
+  .loginForm .columns form .formGroup button {
+    display: block;
+    width: 100%;
+    margin: 20px 0 0;
+  }
+
+  .admin-content {
+    padding: 14px;
+  }
+
+  .admin-product-cards-grid,
+  .admin-user-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profileDetails div,
+  .changePassword input {
+    width: calc(100vw - 32px);
+  }
+
+  footer div {
+    display: grid;
+    gap: 24px;
+  }
+}
