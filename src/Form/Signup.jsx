@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import images from "../images/AbrahamolaLogo.png"
 import { useNavigate } from 'react-router-dom'
 import '../style/forms.css'
+import { API_URL } from "../config";
 
 const Signup = () => {
     //Form datas
@@ -99,7 +100,7 @@ const Signup = () => {
                 contact: String(formData.contact).replace(/\D/g, '')
             };
 
-            const response = await fetch("http://localhost:5000/SignUp", {
+            const response = await fetch(`${API_URL}/SignUp`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

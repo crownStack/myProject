@@ -3,6 +3,7 @@ import images from "../images/AbrahamolaLogo.png";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../style/forms.css";
+import { API_URL } from "../config";
 
 const Login = () => {
     const [ formData, setFormData ] = useState({
@@ -42,7 +43,7 @@ const Login = () => {
         if(newError.email || newError.password) return;
 
         try {
-            const response = await fetch("http://localhost:5000/SignIn", {
+            const response = await fetch(`${API_URL}/SignIn`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

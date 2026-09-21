@@ -330,3 +330,225 @@
     gap: 24px;
   }
 }
+
+@media (max-width: 1024px) {
+  .hero {
+    gap: 28px;
+    padding: 28px 20px 0;
+  }
+
+  .hero .heroText,
+  .hero .heroImg {
+    min-width: 0;
+  }
+
+  .hero .heroText h2 {
+    font-size: 32px;
+  }
+
+  .hero .heroImg {
+    width: min(55vw, 620px);
+    height: auto;
+  }
+
+  .hero .heroImg img {
+    width: 100%;
+    height: auto;
+  }
+
+  .priceSlash,
+  .explore,
+  .repair,
+  .insure {
+    gap: 28px;
+    padding: 30px 20px;
+  }
+
+  .priceSlash .priceSlashText h2 {
+    font-size: 72px;
+  }
+
+  .priceSlash .priceSlashImg {
+    left: 0;
+    transform: scale(0.8);
+    transform-origin: center;
+  }
+
+  .explore .exploreImg img,
+  .repair .repairImg img,
+  .insure .insureImg img {
+    width: min(45vw, 520px);
+    height: auto;
+  }
+
+  .explore .exploreText h2,
+  .repair .repairText h2,
+  .insure .insureText h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 22px;
+    padding: 24px 16px 0;
+  }
+
+  .hero .heroText span {
+    display: inline-block;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .hero .heroText h2 {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .hero .heroText p {
+    font-size: 14px;
+  }
+
+  .hero .heroText p br,
+  .priceSlash .priceSlashText p br,
+  .explore .exploreText p br,
+  .repair .repairText p br,
+  .insure .insureText p br,
+  .team .teamText p br {
+    display: none;
+  }
+
+  .hero .heroText button,
+  .priceSlash .priceSlashText button,
+  .explore .exploreText button,
+  .repair .repairText button,
+  .insure .insureText button,
+  .team .teamText button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .hero .heroImg {
+    width: 100%;
+    height: auto;
+  }
+
+  .priceSlash,
+  .explore,
+  .repair,
+  .insure {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin-top: 28px;
+    padding: 38px 16px;
+    gap: 24px;
+  }
+
+  .priceSlash .priceSlashText span {
+    font-size: 32px;
+  }
+
+  .priceSlash .priceSlashText h2 {
+    font-size: 58px;
+  }
+
+  .priceSlash .priceSlashText p,
+  .explore .exploreText p,
+  .repair .repairText p,
+  .insure .insureText p,
+  .team .teamText p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .priceSlash .priceSlashImg {
+    width: 100%;
+    height: 300px;
+    transform: none;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .priceSlash .priceSlashImg::before {
+    width: 100%;
+    height: 300px;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .priceSlash .priceSlashImg img {
+    width: 75%;
+    height: auto;
+    max-height: 310px;
+    left: 12%;
+    top: 0;
+    object-fit: contain;
+  }
+
+  .explore,
+  .insure {
+    background-size: cover;
+  }
+
+  .explore .exploreImg,
+  .repair .repairImg,
+  .insure .insureImg {
+    order: 2;
+    text-align: center;
+  }
+
+  .explore .exploreText,
+  .repair .repairText,
+  .insure .insureText {
+    order: 1;
+  }
+
+  .explore .exploreImg img,
+  .repair .repairImg img,
+  .insure .insureImg img {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+  }
+
+  .explore .exploreText h2,
+  .repair .repairText h2,
+  .insure .insureText h2 {
+    font-size: 28px;
+    line-height: 1.15;
+  }
+
+  .repair .repairImg {
+    order: 2;
+  }
+
+  .repair .repairText {
+    order: 1;
+  }
+
+  .team {
+    height: 480px;
+  }
+
+  .team::before {
+    height: 480px;
+  }
+
+  .team .teamText {
+    top: 250px;
+    padding: 0 18px;
+  }
+
+  .team .teamText h2 {
+    font-size: 28px;
+    line-height: 1.15;
+  }
+}

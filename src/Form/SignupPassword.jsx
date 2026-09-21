@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import images from "../images/AbrahamolaLogo.png";
 import { useNavigate } from 'react-router-dom'
 import '../style/forms.css'
+import { API_URL } from "../config";
 
 const Password = () => {
     const [ formData, setFormData ] = useState({
@@ -48,7 +49,7 @@ const Password = () => {
                 confirmPassword: formData.confirmPassword
             };
 
-            const response = await fetch("http://localhost:5000/Password", {
+            const response = await fetch(`${API_URL}/Password`, {
                 method: "POST",
                 headers: {
                     "Content-Type" : "application/json"
