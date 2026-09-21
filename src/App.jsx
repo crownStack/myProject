@@ -84,9 +84,11 @@ const ProtectedRoute = () => {
 };
 
 function App() {
+  const routerBaseName = import.meta.env.BASE_URL.replace(/\/$/, '')
+
   return (
     <div>
-      <BrowserRouter basename="/myProject">
+      <BrowserRouter basename={routerBaseName}>
         <Routes>
           <Route element={<NavbarLogout />}>
             <Route index element={<LogoutPage />} />
