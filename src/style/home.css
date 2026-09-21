@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero .heroText span {
+    background-color: #ffcc29;
+    color: #211d1d;
+    width: 145px;
+    height: 22px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 2px 20px;
+}
+
+.hero .heroText h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 10px;
+}
+
+.hero .heroText p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 10px;
+}
+
+.hero .heroText button {
+    width: 313px;
+    height: 51px;
+    opacity: 1;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.hero .heroImg {
+    width: 780px;
+    height: 341px;
+    opacity: 1;
+    box-shadow: 0px 6px 1px 0px #e7e7e7;
+    border-radius: 8px;
+}
+
+.priceSlash {
+    background-image: url("../images/Rectangle 33.png");
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    height: 514px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.priceSlash .priceSlashText span {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffcc29;
+}
+
+.priceSlash .priceSlashText h2 {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 96px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.priceSlash .priceSlashText p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.priceSlash .priceSlashText button {
+    width: 313px;
+    height: 51px;
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.priceSlash .priceSlashText button a {
+    color: #211d1d;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.priceSlash .priceSlashImg {
+    background-image: url('../images/Ellipse 4.png');
+    background-repeat: no-repeat;
+    position: relative;
+    left: -50px;
+    width: 581px;
+    height: 434px;
+}
+
+.priceSlash .priceSlashImg::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-image: url('../images/Ellipse 5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 681px;
+    height: 473px;
+}
+
+.priceSlash .priceSlashImg img {
+    width: 432px;
+    height: 484px;
+    position: absolute;
+    top: -10px;
+    left: 80px;
+}
+
+.explore {
+    margin-top: 30px;
+    background-image: url('../images/Rectangle 15.png');
+    width: 100%;
+    height: 342px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 20px 0px 20px 0px;
+}
+
+.explore .exploreText h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #211d1d;
+}
+
+.explore .exploreText p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 8px;
+}
+
+.explore .exploreText button {
+    width: 313px;
+    height: 51px;
+    border-radius: 10px;
+    border: none;
+    background: #000000;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.explore .exploreImg img {
+    width: 603px;
+    height: 291px;
+}
+
+/* REPAIR */
+.repair {
+    margin-top: 50px;
+    width: 100%;
+    height: 342px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.repair .repairText h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #211d1d;
+}
+
+.repair .repairText p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 8px;
+}
+
+.repair .repairText button {
+    width: 313px;
+    height: 51px;
+    border-radius: 10px;
+    border: none;
+    background: #000000;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.repair .repairText button a {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.repair .repairText img {
+    width: 603px;
+    height: 291px;
+}
+
+/* INSURE */
+.insure {
+    margin-top: 50px;
+    background-image: url('../images/Rectangle 15.png');
+    width: 100%;
+    height: 342px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.insure .insureText h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #211d1d;
+}
+
+.insure .insureText p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 8px;
+}
+
+.insure .insureText button {
+    width: 313px;
+    height: 51px;
+    border-radius: 10px;
+    border: none;
+    background: #000000;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.insure .insureText img {
+    width: 603px;
+    height: 291px;
+}
+
+/* TEAM */
+.team {
+    background-image: url('../images/image 7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 623px;
+    opacity: 1;
+    position: relative;
+}
+
+.team::before {
+    content: '';
+    background: linear-gradient(180deg, rgba(135, 119, 119, 0) 0%, rgba(33, 29, 29, 0.91) 68.1%);
+    width: 100%;
+    height: 623px;
+    position: absolute;
+}
+
+.team .teamText {
+    justify-self: center;
+    position: relative;
+    top: 370px;
+    color: #fff;
+}
+
+.team .teamText h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.team .teamText p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    margin-top: 10px;
+}
+
+.team .teamText button {
+    width: 313px;
+    height: 51px;
+    border-radius: 10px;
+    border: none;
+    background: #ffcc29;
+    color: #000000;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.awoofFriday {
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 250px;
+}
+.awoofFriday::before {
+    background: linear-gradient(180deg, rgba(255, 204, 41, 0.3) 0%, rgba(18, 11, 34, 0.3) 100%);
+    content: "";
+    width: 1082px;
+    height: 690px;
+    opacity: 1;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(80px)
+}
+
+.awoofFriday img {
+    width: 475px;
+    height: 629px;
+}
+
+.awoofFriday .awoofText .black {
+    background-color: #000000;
+    width: 420px;
+    height: 93px;
+    opacity: 1;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    position: relative;
+    left: -120px;
+}
+
+.awoofFriday .awoofText .black p {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.awoofFriday .awoofText .yellow {
+    background: rgba(255, 204, 41, 1);
+    width: 420px;
+    height: 93px;
+    opacity: 1;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    position: relative;
+    top: -20px;
+}
+.awoofFriday .awoofText .yellow p {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.awoofFriday .awoofText .every {
+    background: none;
+    width: 420px;
+    height: 93px;
+    opacity: 1;
+    color: #000000;
+    border-radius: 5px;
+    border: 2px solid #0c0c0c;
+    position: relative;
+    left: 90px;
+    top: -40px;
+    z-index: -1;
+}
+
+.awoofFriday .awoofText .every p {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.repairs {
+    margin: 0;
+    align-items: center;
+    background: rgba(33, 29, 29, 1);
+    width: 100%;
+    height: 263px;
+    opacity: 1;
+    display: flex;
+    justify-self: center;
+    padding-left: 190px
+}
+
+.repairs .repairTexts {
+    padding: 0px;
+    margin: 0px;
+}
+
+.repairs .repairTexts h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.repairs .repairTexts .repairfeatures {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.repairs .repairTexts .repairfeatures div {
+    height: 37px;
+    border-radius: 30px;
+    opacity: 1;
+    background: #fff;
+}
+
+.repairs .repairTexts .repairfeatures p {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.repairImgs {
+    background-image: url('../images/phone_14_01 1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 465px;
+    height: 465px;
+    margin: 170px 0px 0px;
+}
+
+.repairImgs img {
+    width: 303px;
+    height: 379px;
+    position: relative;
+    top: 80px;
+    left: 80px;
+}
+
+.repairField {
+    display: block;
+    margin: 140px 0px 140px 150px;
+}
+
+.repairField label {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+}
+
+.repairField form label span {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+}
+
+.repairField form textarea {
+    width: 916px;
+    height: 219px;
+    padding: 30px;
+    border-radius: 10px;
+    opacity: 1;
+    border: 2px solid rgba(33, 29, 29, 1);
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    resize: none;
+}
+
+.repairField form textarea::placeholder {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+}
+
+.repairField form button {
+    width: 240px;
+    height: 51px;
+    border-radius: 10px;
+    border: none;
+    background: #000000;
+    opacity: 1;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.repairField form button a  {
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.options {
+    position: absolute;
+    background-color: #ffcc29;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
