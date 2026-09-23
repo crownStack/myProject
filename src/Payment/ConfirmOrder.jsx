@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { API_URL } from '../config';
 
 const PAYSTACK_SCRIPT_URL = 'https://js.paystack.co/v1/inline.js';
 
@@ -40,7 +41,7 @@ const ConfirmOrder = () => {
       return;
     }
 
-    fetch(`http://localhost:5000/cart/${cartId}`)
+    fetch(`${API_URL}/cart/${cartId}`)
       .then(async response => {
         const data = await response.json();
         if (!response.ok) throw new Error(data.message || 'Unable to load cart');

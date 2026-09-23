@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { API_URL } from '../config'
 import '../style/cart.css'
 
 const Cart = () => {
@@ -10,9 +11,9 @@ const Cart = () => {
     const cartId = localStorage.getItem('cartId');
     const signedInUser = JSON.parse(localStorage.getItem('signinData') || 'null');
     const cartUrl = signedInUser?.email
-      ? `http://localhost:5000/cart/user/${encodeURIComponent(signedInUser.email)}`
+      ? `${API_URL}/cart/user/${encodeURIComponent(signedInUser.email)}`
       : cartId
-        ? `http://localhost:5000/cart/${cartId}`
+        ? `${API_URL}/cart/${cartId}`
         : null;
 
     if (!cartUrl) {
@@ -38,7 +39,7 @@ const Cart = () => {
   const getImageUrl = image => {
     if (!image) return '';
     if (image.startsWith('http://') || image.startsWith('https://')) return image;
-    return `http://localhost:5000/uploads/${image.replace(/^uploads[\\/]/, '')}`;
+    return `${API_URL}/uploads/${image.replace(/^uploads[\\/]/, '')}`;
   };
 
   const total = items.reduce((sum, item) => sum + (Number(item.product?.price) || 0) * item.quantity, 0);
