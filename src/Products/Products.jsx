@@ -5,6 +5,7 @@ import image2 from "../images/Man with Phone 1.png"
 import image3 from "../images/portrait-young-man-isolated.png"
 import Footer from "../HomePages/Footer"
 import ProductNavbar from '../Products/productNavbar'
+import { API_URL } from '../config'
 import '../style/products.css'
 
 
@@ -14,12 +15,12 @@ const Products = () => {
   const getImageUrl = (image) => {
     if (!image) return '';
     if (image.startsWith('http://') || image.startsWith('https://')) return image;
-    return `http://localhost:5000/uploads/${image.replace(/^uploads[\\/]/, '')}`;
+    return `${API_URL}/uploads/${image.replace(/^uploads[\\/]/, '')}`;
   };
 
     useEffect(() => {
         const getProducts = async () => {
-            const response = await fetch("http://localhost:5000/products");
+            const response = await fetch(`${API_URL}/products`);
             const data = await response.json();
 
             setProducts(data);
@@ -50,7 +51,7 @@ const Products = () => {
         {products.map((product) => (
             <div key={product._id} style={{border: "3px solid black", overflow: 'hidden', borderRadius: "10px", width: "296px", Height: '335px', cursor: "pointer"}}>
                 <img style={{ height: '257px', objectFit: 'cover' }}
-                  src={`http://localhost:5000/uploads/${product.image}`}
+                  src={getImageUrl(product.image)}
                   alt={product.name}
                   Width={291}
                  />

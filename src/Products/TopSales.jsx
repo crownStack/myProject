@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import { API_URL } from '../config';
 
 const TopSales = () => {
     const [products, setProducts] = useState([]);
@@ -8,12 +9,12 @@ const TopSales = () => {
     const getImageUrl = (image) => {
         if (!image) return '';
         if (image.startsWith('http://') || image.startsWith('https://')) return image;
-        return `http://localhost:5000/uploads/${image.replace(/^uploads[\\/]/, '')}`;
+        return `${API_URL}/uploads/${image.replace(/^uploads[\\/]/, '')}`;
       };
     
         useEffect(() => {
             const getProducts = async () => {
-                const response = await fetch("http://localhost:5000/products");
+                const response = await fetch(`${API_URL}/products`);
                 const data = await response.json();
     
                 setProducts(data);

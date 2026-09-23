@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { API_URL } from '../config'
 
 const AddProduct = () => {
     const [ product, setProduct ] = useState({
@@ -46,7 +47,7 @@ const AddProduct = () => {
                 formData.append("number", product.number);
 
                 try {
-                        const response = await fetch("http://localhost:5000/products", {
+                        const response = await fetch(`${API_URL}/products`, {
                                 method: "POST",
                                 body: formData,
                         });
