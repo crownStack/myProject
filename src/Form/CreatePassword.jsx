@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import images from "../images/AbrahamolaLogo.png";
 import "../style/forms.css";
+import { API_URL } from "../config";
 
 const NewPassword = () => {
     const location = useLocation();
@@ -18,7 +19,7 @@ const NewPassword = () => {
             return;
         }
         try {
-            const response = await fetch('http://localhost:5000/ResetPassword', {
+            const response = await fetch(`${API_URL}/ResetPassword`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, code, newPassword })
