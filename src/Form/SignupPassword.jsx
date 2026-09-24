@@ -45,7 +45,7 @@ const Password = () => {
             const savedSignupData = JSON.parse(localStorage.getItem("signupData") || localStorage.getItem("formData") || "{}");
             const finalData = {
                 ...savedSignupData,
-                createPassword: formData.createPassword,
+                password: formData.createPassword,
                 confirmPassword: formData.confirmPassword
             };
 
