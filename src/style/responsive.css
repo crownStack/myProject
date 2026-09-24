@@ -552,3 +552,326 @@
     line-height: 1.15;
   }
 }
+
+@media (max-width: 1100px) {
+  .navbar {
+    gap: 22px;
+    padding: 20px 24px 28px;
+  }
+
+  .navbar img {
+    width: 130px;
+    height: auto;
+  }
+
+  .navbar .links {
+    gap: 14px;
+  }
+
+  .navbar .links .link {
+    font-size: 16px;
+  }
+
+  .heroProducts .hero-gr {
+    width: 72%;
+  }
+
+  .heroProducts img {
+    width: 32%;
+    height: auto;
+    left: auto;
+    margin-left: auto;
+    object-fit: cover;
+  }
+
+  .category {
+    width: min(100% - 32px, 850px);
+  }
+
+  .category .iphones,
+  .category .samsungs,
+  .category .laptop,
+  .category .smartWatch,
+  .category .tablets,
+  .category .accessories,
+  .category .games,
+  .category .iphones::after,
+  .category .samsungs::after,
+  .category .laptop::after,
+  .category .smartWatch::after,
+  .category .tablets::after,
+  .category .accessories::after,
+  .category .games::after {
+    max-width: 100%;
+  }
+
+  .profilePage {
+    width: min(100%, 1120px);
+    padding: 0 20px;
+  }
+
+  .profileDetails div {
+    width: 100%;
+    height: auto;
+    min-height: 138px;
+    padding: 18px;
+  }
+
+  .changePassword input {
+    width: min(100%, 468px);
+  }
+
+  .changePassword form button {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: initial;
+    align-items: center;
+    margin-top: 0;
+    padding: 16px;
+    gap: 14px 18px;
+  }
+
+  .navbar img {
+    width: 100px;
+  }
+
+  .navbar .signbtn {
+    justify-self: end;
+  }
+
+  .navbar .links {
+    order: 3;
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+  }
+
+  .navbar .links .link,
+  .navbar .links p {
+    flex: 0 0 auto;
+    font-size: 13px;
+  }
+
+  .navbar .search {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    min-height: 40px;
+  }
+
+  .navbar .search input {
+    width: 100%;
+  }
+
+  .navbar .search i {
+    flex: 0 0 42px;
+  }
+
+  .heroProducts {
+    height: 190px;
+  }
+
+  .heroProducts .hero-gr {
+    width: 100%;
+  }
+
+  .heroProducts img {
+    display: none;
+  }
+
+  .About {
+    display: block;
+  }
+
+  .About img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+  }
+
+  .Abouttext {
+    position: static;
+    padding: 24px 16px;
+  }
+
+  .aboutText1 {
+    width: 100%;
+    height: auto;
+    top: 0;
+    padding: 24px 18px;
+  }
+
+  .aboutText1 h2 {
+    padding: 0 0 14px;
+    font-size: 21px;
+    line-height: 1.2;
+  }
+
+  .aboutText1 p,
+  .aboutText2 p {
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .aboutText2 {
+    top: 0;
+    padding: 20px 0 0;
+  }
+
+  .profilePage {
+    padding: 0 16px;
+  }
+
+  .profileDetails {
+    gap: 14px;
+  }
+
+  .profileDetails div,
+  .changePassword input {
+    width: 100%;
+  }
+
+  .profileDetails div {
+    min-height: 0;
+  }
+
+  .profileDetails p {
+    padding-left: 0;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .changePassword {
+    margin: 36px 0 70px;
+  }
+
+  .changePassword .colomn {
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .changePassword form button {
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 32px;
+    padding: 34px 20px;
+  }
+
+  footer div {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 18px;
+  }
+
+  footer .subscribe {
+    grid-column: 1 / -1;
+  }
+
+  footer .subscribe form input {
+    width: 100%;
+  }
+
+  .admin-page {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-sidebar {
+    position: static;
+    min-height: auto;
+    padding: 18px 16px;
+  }
+
+  .admin-user-list {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .admin-user-item {
+    flex: 0 0 170px;
+  }
+
+  .admin-content {
+    min-width: 0;
+    padding: 16px;
+  }
+
+  .admin-header-card,
+  .admin-cart-card-header {
+    padding: 16px;
+  }
+
+  .admin-main-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 420px) {
+  .header {
+    margin-top: 28px;
+  }
+
+  .header p {
+    line-height: 1.45;
+  }
+
+  .signupForm,
+  .loginForm {
+    padding: 0 16px;
+  }
+
+  .signupForm .columns .column form .cols .col .formGroup input,
+  .loginPassword,
+  .loginEmail {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .loginPassword span {
+    font-size: 24px !important;
+  }
+
+  .priceSlash .priceSlashText h2 {
+    font-size: 46px;
+  }
+
+  .priceSlash .priceSlashImg {
+    height: 240px;
+  }
+
+  .priceSlash .priceSlashImg::before {
+    height: 240px;
+  }
+
+  .team {
+    height: 420px;
+  }
+
+  .team::before {
+    height: 420px;
+  }
+
+  .team .teamText {
+    top: 210px;
+  }
+
+  footer div {
+    grid-template-columns: 1fr;
+  }
+}

@@ -3,6 +3,9 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: Montserrat, sans-serif;
 }
 
 * {
@@ -11,6 +14,19 @@ body {
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
 }
 
 
