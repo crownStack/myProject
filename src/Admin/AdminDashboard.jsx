@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../style/admin.css';
+import { API_URL } from '../config';
 
 const AdminDashboard = () => {
   const [rows, setRows] = useState([]);
@@ -17,7 +18,7 @@ const AdminDashboard = () => {
   const fetchAdminData = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:5000/admin/users-and-carts');
+      const response = await fetch(`${API_URL}/admin/users-and-carts`);
       const data = await response.json();
 
       if (!response.ok) {
@@ -46,7 +47,7 @@ const AdminDashboard = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('http://localhost:5000/products');
+      const response = await fetch(`${API_URL}/products`);
       const data = await response.json();
 
       if (!response.ok) throw new Error(data.message || 'Unable to load products');
@@ -62,7 +63,7 @@ const AdminDashboard = () => {
     try {
       setActionStatus({ type: '', message: '' });
       setDeletingId(userId);
-      const response = await fetch(`http://localhost:5000/admin/users/${userId}`, {
+      const response = await fetch(`${API_URL}/admin/users/${userId}`, {
         method: 'DELETE'
       });
       const data = await response.json();
@@ -120,7 +121,7 @@ const AdminDashboard = () => {
         if (value !== null && value !== undefined) formData.append(key, value);
       });
 
-      const response = await fetch(`http://localhost:5000/products/${editingProductId}`, {
+      const response = await fetch(`${API_URL}/products/${editingProductId}`, {
         method: 'PUT',
         body: formData
       });
@@ -140,7 +141,7 @@ const AdminDashboard = () => {
   const handleDeleteProduct = async product => {
     try {
       setActionStatus({ type: '', message: '' });
-      const response = await fetch(`http://localhost:5000/products/${product._id}`, { method: 'DELETE' });
+      const response = await fetch(`${API_URL}/products/${product._id}`, { method: 'DELETE' });
       const data = await response.json();
 
       if (!response.ok) throw new Error(data.message || 'Unable to delete product');
@@ -226,7 +227,7 @@ const AdminDashboard = () => {
               <div className="admin-product-cards-grid">
                 {products.map(product => (
                   <article key={product._id} className="admin-product-card">
-                    {product.image && <img src={`http://localhost:5000/uploads/${product.image}`} alt={product.name} className="admin-product-image" />}
+                    {product.image && <img src={`${API_URL}/uploads/${product.image}`} alt={product.name} className="admin-product-image" />}
                     {editingProductId === product._id ? (
                       <form onSubmit={handleSaveProduct} className="admin-product-form">
                         {['name', 'price', 'brand', 'color', 'capacity', 'size', 'weight', 'stock', 'sold'].map(field => (
