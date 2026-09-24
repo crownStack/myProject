@@ -35,8 +35,8 @@ const Login = () => {
             newError.email = 'Valid Email with @ is required!!'
         };
   
-        if(formData.password.length < 8) {
-            newError.password = 'Please enter a valid Password!!'
+        if(formData.password.length < 6) {
+            newError.password = 'Password must contain at least 6 characters'
         }
 
         setError(newError)

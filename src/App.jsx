@@ -25,6 +25,7 @@ import Profile from "./HomePages/Profile"
 import CodeRequest from "./Form/CodeRequest"
 import CreatePassword from "./Form/CreatePassword"
 import AdminDashboard from "./Admin/AdminDashboard"
+import { API_URL } from "./config"
 
 const isUserSignedIn = () => {
   try {
@@ -50,7 +51,7 @@ const ProtectedRoute = () => {
     }
 
     const verifyAccount = () => {
-      fetch(`http://localhost:5000/CurrentUser?email=${encodeURIComponent(savedUser.email)}`)
+      fetch(`${API_URL}/CurrentUser?email=${encodeURIComponent(savedUser.email)}`)
         .then(response => {
           if (response.status === 404) {
             localStorage.removeItem('signinData');

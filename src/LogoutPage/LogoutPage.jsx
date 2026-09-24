@@ -7,12 +7,13 @@ import image3 from "../images/Explore Picture 1.png"
 import image4 from "../images/Repair Picture 1.png"
 import image5 from "../images/Insure Picture 1.png"
 import Footer from "../HomePages/Footer"
+import { API_URL } from "../config"
 
 const LogOut = () => {
   const [ message, setMessage ] = useState('');
 
   useEffect(() =>{
-    fetch("http://localhost:5000/Home")
+    fetch(`${API_URL}/Home`)
     .then((res) => res.json())
     .then((data) => {
       setMessage(data.message);

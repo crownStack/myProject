@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Footer from './Footer';
 import '../style/profile.css';
+import { API_URL } from '../config';
 
 
 const Profile = () => {
@@ -25,7 +26,7 @@ const Profile = () => {
     setStatus('');
 
     try {
-      const response = await fetch('http://localhost:5000/ChangePassword', {
+      const response = await fetch(`${API_URL}/ChangePassword`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: user.email, ...passwords })
