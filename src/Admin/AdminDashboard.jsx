@@ -349,7 +349,7 @@ const AdminDashboard = () => {
                   <p><strong>State:</strong> {user.state}</p>
                   <p><strong>Country:</strong> {user.country}</p>
                   <p><strong>Contact:</strong> {user.contact}</p>
-                  <p><strong>Password:</strong> {user.password}</p>
+                  <p><strong>Password:</strong> {user.password || 'Not set'}</p>
 
                   {pendingDelete?.type === 'user' && pendingDelete.id === user._id ? (
                     <div className="admin-inline-confirm">
