@@ -102,7 +102,6 @@ function App() {
               <Route path="/Home" element={<Home />} />
               <Route path="/About" element={<About />} />
               <Route path="/Products" element={<Products />} />
-              <Route path="/AddProduct" element={<AddProduct />} />
               <Route path="/findus" element={<Findus />} />
               <Route path="/Profile" element={<Profile />} />
               <Route path="/Cart" element={<Cart />} />
@@ -127,6 +126,7 @@ function App() {
           <Route path="/serviceCenter" element={<ServiceCenter />} />
           <Route path="/serviceCenter2" element={<ServiceCenter2 />} />
           <Route path="/TopSales" element={<TopSales />} />
+          <Route path="/AddProduct" element={<AddProduct />} />
         </Routes>
       </BrowserRouter>
 

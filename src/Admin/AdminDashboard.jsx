@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../style/admin.css';
 import { API_URL } from '../config';
 
@@ -185,6 +186,8 @@ const AdminDashboard = () => {
         >
           Products
         </button>
+
+        <button className="admin-nav-button"><Link style={{ color: "black" }} to="/AddProduct">Add Product</Link></button>
 
         <div className="admin-user-list">
           {rows.length === 0 ? (
