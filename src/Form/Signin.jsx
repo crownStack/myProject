@@ -48,7 +48,10 @@ const Login = () => {
                 headers: {
                     "Content-Type": "application/json"
                 },
-            body: JSON.stringify(formData)
+            body: JSON.stringify({
+                ...formData,
+                email: formData.email.trim()
+            })
         });
 
         const data = await response.json();
@@ -82,7 +85,7 @@ const Login = () => {
                             <div className="formGroup">
                                 <label>E-mail Address or Contact Number</label><br />
                                 <div className="loginEmail">
-                                    <input type="email" value={formData.email} onChange={handleChange} name="email" placeholder="Enter your E-mail Address or Contact Number" />
+                                    <input type="text" value={formData.email} onChange={handleChange} name="email" placeholder="Enter your E-mail Address or Contact Number" />
                                 </div>
                                 { error.email && <p style={{ color: 'red', fontSize: '12px', fontWeight: 'bold', textAlign: 'left', position: 'relative', top: '-13px'}}>{error.email}</p> }
                             </div>

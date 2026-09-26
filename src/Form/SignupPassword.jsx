@@ -65,7 +65,7 @@ const Password = () => {
             }
             
             console.log("Password success:", data);
-            localStorage.setItem("signupData", JSON.stringify(finalData));
+            localStorage.removeItem("signupData");
             navigate("/Signin");
             } catch (error) {
                 console.error("Password error:", error);
