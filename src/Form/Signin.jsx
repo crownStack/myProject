@@ -31,8 +31,10 @@ const Login = () => {
 
         let newError = { email: '', password: '' }
 
-        if(!formData.email || !formData.email.includes('@')) {
-            newError.email = 'Valid Email with @ is required!!'
+        const identifier = formData.email.trim();
+        const contactDigits = identifier.replace(/\D/g, '');
+        if(!identifier.includes('@') && contactDigits.length !== 11) {
+            newError.email = 'Enter a valid email or 11-digit contact number.'
         };
   
         if(formData.password.length < 6) {
