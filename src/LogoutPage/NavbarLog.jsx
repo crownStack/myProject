@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className="navbar" style={{ position: "sticky", top: 0, zIndex: 1000 }}>
+            <nav className="navbar">
                 <img src={images} alt="Abrahamola Logo" />
                 <div className="links">
                     <NavLink className="link" to="/" style={({isActive}) => ({
