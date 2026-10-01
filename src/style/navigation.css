@@ -10,6 +10,7 @@
   padding-bottom: 40px;
   border-bottom: 1px solid rgb(231, 231, 231);
   background-color: #fff;
+  position: relative;
 }
 
 .navbar .links {
