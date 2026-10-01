@@ -1,19 +1,18 @@
 @media (min-width: 761px) {
   .home-navbar {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   }
 
   .home-navbar img {
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: center;
-  }
-
-  .home-navbar .links {
     grid-column: 1;
     grid-row: 1;
     justify-self: start;
+  }
+
+  .home-navbar .links {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
   }
 
   .home-navbar .search {
