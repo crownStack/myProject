@@ -2,43 +2,6 @@
 
 /* Shared tablet and phone layout adjustments */
 @media (max-width: 1024px) {
-  .category {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-    padding: 0 20px;
-  }
-
-  .category .iphones,
-  .category .samsungs,
-  .category .laptop,
-  .category .smartWatch,
-  .category .tablets,
-  .category .accessories,
-  .category .games {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .productDetails {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 24px;
-    padding: 20px;
-  }
-
-  .delivery {
-    grid-column: 1 / -1;
-    width: min(100%, 520px);
-    height: auto;
-    min-height: 420px;
-    justify-self: stretch;
-  }
-
-  .delivery select,
-  .delivery textarea,
-  .delivery input {
-    width: 100%;
-  }
-
   .signupForm .columns .column form .cols,
   .loginForm .columns form .column .formGroup {
     max-width: calc(100vw - 40px);
@@ -74,107 +37,6 @@
 }
 
 @media (max-width: 600px) {
-  .product-navbar .links {
-    gap: 12px;
-    margin-left: 0;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-
-  .heroProducts {
-    height: 190px;
-  }
-
-  .heroProducts .hero-gr {
-    width: 100%;
-    height: 190px;
-  }
-
-  .heroProducts .hero-gr h2 {
-    padding-top: 62px;
-    font-size: 24px;
-  }
-
-  .heroProducts img {
-    display: none;
-  }
-
-  .category {
-    grid-template-columns: 1fr;
-    padding: 0 16px;
-  }
-
-  .category .iphones,
-  .category .samsungs,
-  .category .laptop,
-  .category .smartWatch,
-  .category .tablets,
-  .category .accessories,
-  .category .games {
-    width: 100%;
-    height: 220px;
-  }
-
-  .category .iphones::after,
-  .category .samsungs::after,
-  .category .laptop::after,
-  .category .smartWatch::after,
-  .category .tablets::after,
-  .category .accessories::after,
-  .category .games::after {
-    width: 100%;
-    height: 220px;
-  }
-
-  .category .iphones h1,
-  .category .samsungs h1,
-  .category .laptop h1,
-  .category .smartWatch h1,
-  .category .tablets h1,
-  .category .accessories h1,
-  .category .games h1 {
-    padding: 168px 0 0 22px;
-    font-size: 24px;
-  }
-
-  .productDetails {
-    display: block;
-    padding: 12px;
-    margin: 16px auto;
-  }
-
-  .productDetails .productImage img {
-    height: 300px;
-  }
-
-  .productInfo h1 {
-    margin-bottom: 30px;
-    font-size: 26px;
-  }
-
-  .productRating {
-    justify-content: space-between;
-    gap: 12px;
-  }
-
-  .productInfo span {
-    left: 0;
-  }
-
-  .CartBtn {
-    margin-top: 24px;
-  }
-
-  .CartBtn button {
-    width: 100%;
-  }
-
-  .delivery {
-    margin-top: 24px;
-    padding: 22px 16px;
-    min-height: 0;
-  }
-
   .cartPage {
     padding: 0 12px;
     margin-top: 16px;
@@ -562,39 +424,6 @@
 }
 
 @media (max-width: 1100px) {
-  .heroProducts .hero-gr {
-    width: 72%;
-  }
-
-  .heroProducts img {
-    width: 32%;
-    height: auto;
-    left: auto;
-    margin-left: auto;
-    object-fit: cover;
-  }
-
-  .category {
-    width: min(100% - 32px, 850px);
-  }
-
-  .category .iphones,
-  .category .samsungs,
-  .category .laptop,
-  .category .smartWatch,
-  .category .tablets,
-  .category .accessories,
-  .category .games,
-  .category .iphones::after,
-  .category .samsungs::after,
-  .category .laptop::after,
-  .category .smartWatch::after,
-  .category .tablets::after,
-  .category .accessories::after,
-  .category .games::after {
-    max-width: 100%;
-  }
-
   .profilePage {
     width: min(100%, 1120px);
     padding: 0 20px;
@@ -617,18 +446,6 @@
 }
 
 @media (max-width: 760px) {
-  .heroProducts {
-    height: 190px;
-  }
-
-  .heroProducts .hero-gr {
-    width: 100%;
-  }
-
-  .heroProducts img {
-    display: none;
-  }
-
   .About {
     display: block;
   }
