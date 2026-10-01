@@ -65,6 +65,9 @@
 
   .home-navbar img {
     width: 100px;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-self: center;
   }
 
   .home-navbar .signbtn {
@@ -74,6 +77,7 @@
   .home-navbar .links {
     order: 3;
     grid-column: 1 / -1;
+    grid-row: 3;
     width: 100%;
     justify-content: flex-start;
     flex-wrap: nowrap;
