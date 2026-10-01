@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { Outlet, NavLink, Link } from "react-router-dom";
 import images from "../images/AbrahamolaLogo.png";
-import "../style/navigation.css";
+import "../style/logout-navigation.css";
+import "../style/logout-responsive.css";
 
 const Navbar = () => {
     const [ showOptions, setShowOptions ] = useState(false);
 
     return (
         <div>
-            <nav className="navbar">
+            <nav className="logout-navbar">
                 <img src={images} alt="Abrahamola Logo" />
                 <div className="links">
                     <NavLink className="link" to="/" style={({isActive}) => ({

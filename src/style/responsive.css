@@ -75,10 +75,9 @@
 
 @media (max-width: 600px) {
   .navbar {
-    margin-top: 120px;
+    margin-top: 12px;
     padding: 14px 12px 20px;
     gap: 14px;
-    position: relative;
   }
 
   .navbar img {
