@@ -84,6 +84,7 @@
     width: 92px;
     height: auto;
     justify-self: center;
+    justify-items: center;
   }
 
   .navbar .links {
