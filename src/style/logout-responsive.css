@@ -26,7 +26,6 @@
   }
 
   .logout-navbar .signbtn .signup {
-    margin-left: 8px;
     padding: 10px;
     width: auto;
   }
@@ -42,6 +41,14 @@
   .logout-navbar img {
     width: 92px;
     height: auto;
+  }
+
+  .logout-navbar .logout-brand-actions {
+    gap: 10px;
+  }
+
+  .logout-navbar .signbtn {
+    gap: 8px;
   }
 
   .logout-navbar .links {

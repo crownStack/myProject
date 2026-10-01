@@ -10,6 +10,20 @@
   background-color: #fff;
 }
 
+.logout-navbar .logout-brand-actions,
+.logout-navbar .signbtn {
+  display: flex;
+  align-items: center;
+}
+
+.logout-navbar .logout-brand-actions {
+  gap: 16px;
+}
+
+.logout-navbar .signbtn {
+  gap: 12px;
+}
+
 .logout-navbar .links {
   display: flex;
   gap: 20px;
@@ -79,7 +93,6 @@
 .logout-navbar .signbtn .signup {
   background: yellow;
   padding: 10px 20px;
-  margin-left: 20px;
   width: 110px;
   border-radius: 10px;
   opacity: 1;

@@ -10,7 +10,13 @@ const Navbar = () => {
     return (
         <div>
             <nav className="logout-navbar">
-                <img src={images} alt="Abrahamola Logo" />
+                <div className="logout-brand-actions">
+                    <img src={images} alt="Abrahamola Logo" />
+                    <div className="signbtn">
+                        <Link to="/signin">Sign in</Link>
+                        <Link className="signup" to="/Signup">Sign up</Link>
+                    </div>
+                </div>
                 <div className="links">
                     <NavLink className="link" to="/" style={({isActive}) => ({
                         margin: "0 10px",
@@ -44,10 +50,6 @@ const Navbar = () => {
                     <i className="fa-solid fa-magnifying-glass"></i>
                 </div>
 
-                <div className="signbtn">
-                    <Link to="/signin">Sign in</Link>
-                    <Link className="signup" to="/Signup">Sign up</Link>
-                </div>
             </nav>
 
             <hr />
