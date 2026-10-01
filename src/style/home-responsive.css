@@ -1,0 +1,133 @@
+@media (max-width: 1100px) {
+  .home-navbar {
+    gap: 22px;
+    padding: 20px 24px 28px;
+  }
+
+  .home-navbar img {
+    width: 130px;
+    height: auto;
+  }
+
+  .home-navbar .links {
+    gap: 14px;
+  }
+
+  .home-navbar .links .link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-navbar {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .home-navbar .links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .home-navbar .links .link {
+    font-size: 14px;
+  }
+
+  .home-navbar .search {
+    width: 150px;
+  }
+
+  .home-navbar .signbtn a {
+    font-size: 14px;
+  }
+
+  .home-navbar .signbtn .signup {
+    margin-left: 8px;
+    padding: 10px;
+    width: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .home-navbar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: initial;
+    align-items: center;
+    margin-top: 0;
+    padding: 16px;
+    gap: 14px 18px;
+  }
+
+  .home-navbar img {
+    width: 100px;
+  }
+
+  .home-navbar .signbtn {
+    justify-self: end;
+  }
+
+  .home-navbar .links {
+    order: 3;
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+  }
+
+  .home-navbar .links .link,
+  .home-navbar .links p {
+    flex: 0 0 auto;
+    font-size: 13px;
+  }
+
+  .home-navbar .search {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    min-height: 40px;
+  }
+
+  .home-navbar .search input {
+    width: 100%;
+  }
+
+  .home-navbar .search i {
+    flex: 0 0 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-navbar {
+    margin-top: 12px;
+    padding: 14px 12px 20px;
+    gap: 14px;
+  }
+
+  .home-navbar img {
+    width: 92px;
+    height: auto;
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .home-navbar .links {
+    gap: 8px;
+  }
+
+  .home-navbar .search {
+    width: 100%;
+  }
+
+  .home-navbar .search input {
+    flex: 1;
+    width: auto;
+  }
+}

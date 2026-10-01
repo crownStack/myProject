@@ -74,34 +74,6 @@
 }
 
 @media (max-width: 600px) {
-  .navbar {
-    margin-top: 12px;
-    padding: 14px 12px 20px;
-    gap: 14px;
-  }
-
-  .navbar img {
-    width: 92px;
-    height: auto;
-    justify-self: center;
-    justify-items: center;
-    position: relative;
-    left: 100px;
-  }
-
-  .navbar .links {
-    gap: 8px;
-  }
-
-  .navbar .search {
-    width: 100%;
-  }
-
-  .navbar .search input {
-    flex: 1;
-    width: auto;
-  }
-
   .product-navbar .links {
     gap: 12px;
     margin-left: 0;
@@ -590,24 +562,6 @@
 }
 
 @media (max-width: 1100px) {
-  .navbar {
-    gap: 22px;
-    padding: 20px 24px 28px;
-  }
-
-  .navbar img {
-    width: 130px;
-    height: auto;
-  }
-
-  .navbar .links {
-    gap: 14px;
-  }
-
-  .navbar .links .link {
-    font-size: 16px;
-  }
-
   .heroProducts .hero-gr {
     width: 72%;
   }
@@ -663,56 +617,6 @@
 }
 
 @media (max-width: 760px) {
-  .navbar {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    justify-content: initial;
-    align-items: center;
-    margin-top: 0;
-    padding: 16px;
-    gap: 14px 18px;
-  }
-
-  .navbar img {
-    width: 100px;
-  }
-
-  .navbar .signbtn {
-    justify-self: end;
-  }
-
-  .navbar .links {
-    order: 3;
-    grid-column: 1 / -1;
-    width: 100%;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 4px;
-    scrollbar-width: thin;
-  }
-
-  .navbar .links .link,
-  .navbar .links p {
-    flex: 0 0 auto;
-    font-size: 13px;
-  }
-
-  .navbar .search {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    width: 100%;
-    min-height: 40px;
-  }
-
-  .navbar .search input {
-    width: 100%;
-  }
-
-  .navbar .search i {
-    flex: 0 0 42px;
-  }
-
   .heroProducts {
     height: 190px;
   }

@@ -1,8 +1,6 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap');
 
-/* NavBar */
-
-.navbar {
+.home-navbar {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
@@ -12,13 +10,13 @@
   background-color: #fff;
 }
 
-.navbar .links {
+.home-navbar .links {
   display: flex;
   gap: 20px;
   margin: 0;
 }
 
-.navbar .links .link {
+.home-navbar .links .link {
   cursor: pointer;
   font-family: Montserrat;
   font-style: Medium;
@@ -27,7 +25,7 @@
   letter-spacing: 0%;
 }
 
-.navbar .links p {
+.home-navbar .links p {
   color: #979281;
   cursor: pointer;
   font-family: Montserrat;
@@ -37,29 +35,29 @@
   letter-spacing: 0%;
 }
 
-.navbar .links i {
+.home-navbar .links i {
   cursor: pointer;
   color: #979281;
   font-size: 16px;
 }
 
-.navbar .search {
+.home-navbar .search {
   display: flex;
   border: 2px solid rgb(150, 148, 148);
   border-radius: 5px;
   width: 134px;
-  padding: 0px 10px;
+  padding: 0 10px;
 }
 
-.navbar .search input {
+.home-navbar .search input {
   border: none;
-  padding: 0px 0px;
+  padding: 0;
   outline: unset;
   width: 90px;
   background: none;
 }
 
-.navbar .search i {
+.home-navbar .search i {
   background: rgb(150, 148, 148);
   padding: 10px 8px;
   width: 50px;
@@ -68,7 +66,7 @@
   text-align: center;
 }
 
-.navbar .signbtn a {
+.home-navbar .signbtn a {
   color: black;
   font-family: Montserrat;
   font-weight: 700;
@@ -78,7 +76,7 @@
   letter-spacing: 0%;
 }
 
-.navbar .signbtn .signup {
+.home-navbar .signbtn .signup {
   background: yellow;
   padding: 10px 20px;
   margin-left: 20px;
@@ -86,42 +84,3 @@
   border-radius: 10px;
   opacity: 1;
 }
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .navbar .links {
-    order: 3;
-    width: 100%;
-    justify-content: center;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .navbar .links .link {
-    font-size: 14px;
-  }
-
-  .navbar .search {
-    width: 150px;
-  }
-
-  .navbar .signbtn a {
-    font-size: 14px;
-  }
-
-  .navbar .signbtn .signup {
-    margin-left: 8px;
-    padding: 10px;
-    width: auto;
-  }
-}
-
-
-
-
-

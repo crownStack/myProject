@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Outlet, NavLink, Link } from "react-router-dom";
 import images from "../images/AbrahamolaLogo.png";
-import "../style/navigation.css";
+import "../style/home-navigation.css";
+import "../style/home-responsive.css";
 
 const Navbar = () => {
     const [ showOptions, setShowOptions ] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className="navbar">
+            <nav className="home-navbar">
                 <img src={images} alt="Abrahamola Logo" />
                 <div className="links">
                     <NavLink className="link" to="/Home" style={({isActive}) => ({
