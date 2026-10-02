@@ -47,7 +47,7 @@ const Products = () => {
         <img src={image3} alt="" />
       </div>
 
-      <div style={{display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: "20px", justifySelf: "center", justifyItems: "center", marginTop: "30px"}}>
+      <div className='PRODUCTS' style={{}}>
         {products.map((product) => (
             <div key={product._id} style={{border: "3px solid black", overflow: 'hidden', borderRadius: "10px", width: "296px", Height: '335px', cursor: "pointer"}}>
                 <img style={{ height: '257px', objectFit: 'cover' }}

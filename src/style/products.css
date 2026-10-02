@@ -57,6 +57,15 @@
   left: 940px;
 }
 
+.PRODUCTS {
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-self: center;
+  justify-items: center; 
+  margin-top: 30px;
+}
+
 .category {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

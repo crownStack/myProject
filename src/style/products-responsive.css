@@ -176,6 +176,22 @@
 }
 
 @media (max-width: 760px) {
+  .PRODUCTS {
+    display: block;
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .PRODUCTS > div {
+    width: min(100%, 360px) !important;
+    margin: 0 auto 20px;
+  }
+
+  .PRODUCTS > div > img {
+    display: block;
+    width: 100%;
+  }
+
   .heroProducts {
     height: 190px;
   }
