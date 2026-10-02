@@ -58,8 +58,8 @@
 }
 
 .PRODUCTS {
-  display: block; 
-  grid-template-columns: repeat(1, 1fr);
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   justify-self: center;
   justify-items: center; 
