@@ -64,8 +64,7 @@
   }
 
   .PRODUCTS {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
     gap: 20px;
     justify-items: center;
     margin-top: 30px;
@@ -198,14 +197,6 @@
   .PRODUCTS > div > img {
     display: block;
     width: 100%;
-  }
-
-  .PRODUCTS {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    justify-items: center;
-    margin-top: 30px;
   }
 
   .heroProducts {
