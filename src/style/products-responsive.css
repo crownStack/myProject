@@ -63,6 +63,14 @@
     display: none;
   }
 
+  .PRODUCTS {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+  }
+
   .category {
     grid-template-columns: 1fr;
     padding: 0 16px;
@@ -175,9 +183,9 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 767px) {
   .PRODUCTS {
-    display: block;
+    display: block !important;
     width: 100%;
     padding: 0 16px;
   }
